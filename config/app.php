@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -225,6 +226,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'bugsnag.logger'=> Illuminate\Contracts\Logging\Log::class,
+        'bugsnag.logger' => Psr\Log\LoggerInterface::class
 
     ],
 
